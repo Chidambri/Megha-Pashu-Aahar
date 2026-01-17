@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megha PashuAahar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="logo.png.jpg" alt="Megha Pashu Aahar" class="logo-image">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Megha Pashu Aahar</h1>
+                <p>Healthy Animals, Prosperous Farmers </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>Megha Pashu Aahar was established in 2004 with a vision to support farmers by providing high-quality cattle feed supplements that promote better animal health and productivity. Since our beginning, we have been committed to delivering reliable and nutritionally balanced feed solutions for livestock.</p>
+                
+                <p>We specialize in the development and supply of cattle feed supplements designed to improve digestion, strength, milk yield, and overall well-being of cattle. Our products are carefully formulated using quality ingredients and modern nutritional practices to ensure consistent results.</p>
+                
+                <p>At Megha Pashu Aahar, we believe that healthy cattle are the foundation of successful and sustainable farming. Our mission is to build long-term trust with farmers by offering safe, effective, and affordable feed supplements that meet the evolving needs of the livestock industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded dynamically from the products folder -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalProductName">MEGTONE</h2>
+            <div class="product-details-grid" id="productDetailsGrid">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content order-modal-content">
+            <span class="close close-order">&times;</span>
+            <h2>Order Now</h2>
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label>Product Name *</label>
+                    <input type="text" id="orderProductName" readonly required>
+                </div>
+                <div class="form-group">
+                    <label>Price *</label>
+                    <input type="text" id="orderPrice" readonly required>
+                </div>
+                <div class="form-group">
+                    <label>Your Name *</label>
+                    <input type="text" id="orderName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number *</label>
+                    <input type="tel" id="orderPhone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label>Quantity *</label>
+                    <input type="number" id="orderQuantity" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Delivery Address *</label>
+                    <textarea id="orderAddress" placeholder="Enter your delivery address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Special Requirements</label>
+                    <textarea id="orderRequirements" placeholder="Any special instructions" rows="2"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Place Order via Email</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MEGTONE Product Section -->
+    <section id="megtone" class="megtone-section">
+        <div class="container">
+            <div class="megtone-header">
+                <h2>MEGTONE Liquid Feed Supplement</h2>
+                <p class="megtone-tagline">Not Just a Supplement, But a Blessing for Your Income!</p>
+            </div>
+
+            <div class="megtone-intro">
+                <p>MEGTONE is a trusted, premium formula designed to bring a revolutionary change to both animal health and milk production. With <strong>ISO 9001:2015 Certification</strong> and <strong>ZED Bronze quality standards</strong>, MEGTONE is a symbol of guaranteed purity and excellence.</p>
+            </div>
+
+            <!-- Why MEGTONE is the Superior Choice -->
+            <div class="megtone-content">
+                <h3>Why MEGTONE is the Superior Choice?</h3>
+                <div class="megtone-features-grid">
+                    <div class="megtone-feature">
+                        <div class="feature-icon">💪</div>
+                        <h4>High-Potency Formula</h4>
+                        <p>Every 100 ml is packed with <strong>2040 mg Calcium</strong> and <strong>900 mg Phosphorus</strong> to ensure skeletal strength and maximum milk output.</p>
+                    </div>
+                    <div class="megtone-feature">
+                        <div class="feature-icon">🧬</div>
+                        <h4>Vital Vitamin Complex</h4>
+                        <p>Contains <strong>Vitamin D3 (10,000 I.U.)</strong> for superior absorption, <strong>Vitamin B12 (100 mcg)</strong> for enhanced metabolism, and <strong>Vitamin A (2400 I.U.)</strong> for robust immunity.</p>
+                    </div>
+                    <div class="megtone-feature">
+                        <div class="feature-icon">🔄</div>
+                        <h4>Better Digestion</h4>
+                        <p>Specifically designed to maintain a healthy digestive system, ensuring animals absorb every bit of nutrition from their feed.</p>
+                    </div>
+                    <div class="megtone-feature">
+                        <div class="feature-icon">🐄</div>
+                        <h4>All-in-One Solution</h4>
+                        <p>The perfect nutritional partner for Cattle, Horses, Calves, Sheep, Goats, Dogs, and Poultry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Benefits -->
+            <div class="megtone-benefits">
+                <h3>Why is MEGTONE the Best? (Key Benefits)</h3>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🥛</span>
+                        <div class="benefit-content">
+                            <h5>Unstoppable Milk Yield</h5>
+                            <p>Significantly increases the volume and quality of milk in dairy animals.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🦴</span>
+                        <div class="benefit-content">
+                            <h5>Iron-Like Bone Strength</h5>
+                            <p>Promotes strong bone development in growing calves and maintains skeletal health in adult livestock.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">✅</span>
+                        <div class="benefit-content">
+                            <h5>Optimal Digestion (Digestium)</h5>
+                            <p>Its unique formula keeps the digestive tract healthy, ensuring your livestock stays active and disease-free.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="benefit-icon">🏆</span>
+                        <div class="benefit-content">
+                            <h5>Guaranteed Quality</h5>
+                            <p>Manufactured by Megha Pashuahar and ISO certified—making it the first choice for every successful livestock farmer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="megtone-certifications">
+                <p><strong>✓ ISO 9001:2015 Certified</strong> | <strong>✓ ZED Bronze Quality Standards</strong> | <strong>✓ Premium Formula</strong></p>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-number">01</span>
+                    <h3>Premium Quality Standards</h3>
+                    <p>Every product we manufacture is ISO 9001:2015 Certified and carries the ZED Bronze quality certification, guaranteeing 100% purity and safety for your livestock.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-number">02</span>
+                    <h3>High-Potency Composition</h3>
+                    <p>We offer superior mineral concentrations compared to market standards—including 2040 mg Calcium and 900 mg Phosphorus—which are essential for strong bone structure and maximum milk production.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-number">03</span>
+                    <h3>Advanced Vitamin Formula</h3>
+                    <p>Our supplement features a precise blend of Vitamin D3 (10,000 I.U.), Vitamin B12 (100 mcg), and Vitamin A (2400 I.U.) to rapidly boost immunity and improve metabolism.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-number">04</span>
+                    <h3>Proven Results in Milk Yield</h3>
+                    <p>Formulated as a "Complete Galactagogue," MEGTONE naturally enhances both the quantity and the nutritional quality of milk.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-number">05</span>
+                    <h3>Better Digestion & Health</h3>
+                    <p>Specifically designed to optimize the digestive system, MEGTONE keeps your livestock healthy and protected against common diseases.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-number">06</span>
+                    <h3>Multipurpose Solution</h3>
+                    <p>Whether you have cows, buffaloes, horses, goats, or poultry, our product is an effective solution for a wide range of animals and birds.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-number">07</span>
+                    <h3>The Trust of Megha Pashuahar</h3>
+                    <p>We are a proud "Made in India" brand, dedicated to the prosperity of farmers and the long-term health of their livestock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3> Address </h3>
+                        <p>MEGHA PASHUAAHAR UDYAM-BR-35-0019888 A.O:- SEARSOLE RAJBARI,RANIGANJ W.BARDHAMAN(W.B.) </p>
+                    </div>
+                    <div class="info-card">
+                        <h3>📞 Phone</h3>
+                        <p> +91 7004649529</p>
+                        <p> +91 9431409815</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>✉️ Email</h3>
+                        <p>meghapashuaahar@gmail.com</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>Leading provider of Cattle feed supplements.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2004 Megha Pashu Aahar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
